@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #nav{
+            width: 409px;
+            height: 30px;
+        }
+        #nav .first{
+            margin-right:0;
+        }
+        #nav > li{
+            width: 100px;
+            height: 30px;
+            background: #ff0000;
+            float: left;
+            margin-right:3px;
+
+        }
+        #nav a{
+            color: #ffffff;
+            display: block;
+            line-height: 30px;
+            text-align:center;
+        }
+        #nav li:hover{
+            background: blueviolet;
+        }
+        #nav .submenu li:hover {
+            background: #cccccc;
+        }
+       .submenu{
+           display: none;
+       }
+        #nav > li:hover .submenu  {
+            display: block;
+        }
+        .submenu li{
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="nav">
+    <li ><a href="">link1</a></li>
+    <li>
+        <a href="">link2</a>
+        <ul class="submenu">
+            <li>子菜单1</li>
+            <li>子菜单2</li>
+            <li>子菜单3</li>
+        </ul>
+
+    </li>
+    <li><a href="">link3</a></li>
+    <li class="first"><a href="">link4</a></li>
+</ul>
+</body>
+</html>
+<!-- 1.权重值
+      2.a标签要在li中居中需要先变成块级元素-->
+<!--子菜单1和link2一样颜色是因为link2中里面的a浮动了-->
+<!--若link4掉下来了是因为权重值导致了宽度不够-->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//    for(var i=0;i<5;i++){
+//        if(i==3){
+//            break;
+//        }
+//        console.log(i);     //要在循环里面写
+//    }
+// function factorial(n) {
+//        if(n==1){
+//            return 1;       //要有个出口
+//        }
+//        return n*factorial(n-1);        //找到规律
+//    }
+//        console.log(factorial(10));
+
+        //列阵
+//        function print(n) {
+//            for(var i=1;i<=n;i++){
+//                for(var j=1;j<=i;j++){
+//                    document.write(j+'&nbsp');
+//                }
+//                document.write('<br>');
+//            }
+//        }
+//    print(5);
+//function print(n) {
+//    for(var i=1;i<=n;i++){
+//        for(var k=1;k<=n-i;k++){            //注意到在每行前面加一个空格规律是k<=n-i
+//            document.write('&nbsp');
+//        }
+//        for(var j=1;j<=i;j++){
+//            document.write('*'+'&nbsp');
+//        }
+//        document.write('<br>');
+//    }
+//}
+//print(5);
+//A=Math.floor(i/1000)
+//B=Math.floor(i/100)%10
+//C=Math.floor(i/10)%10
+//D=Math.floor(i/10)
+
+//
+//    } for(var i=100;i<1000;i++){
+//    if(i%4==2 && i%7==3){
+//        document.write(i +'<br>');
+//    }
+    for(var i=1000;i<10000;i++){
+        if(i%13==0&&(Math.floor(i/1000)==Math.floor(i/100)%10 +Math.floor(i/10)%10 )){
+            document.write(i+'<br>');
+
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>

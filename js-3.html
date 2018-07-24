@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    var a=5;
+//    var b=a;
+//    a=6;
+//    console.log(b);       //基本数据类型存放在栈内存里面
+//    var obj={
+//        name:'zs',
+//        age:18
+//    }
+//    var obj1=obj;
+//    obj1={
+//        name:'lisi',
+//        age:20
+//    }
+//    console.log(obj1);      //浅拷贝
+    var obj1 ={
+        name:'hiiiiiiiiii',
+        age:1212,
+        dad:{
+            name:'hii',
+            age:23423
+        }
+    };
+    function clone(obj) {
+        var newObj={};
+        for(var p in obj){
+            if(typeof obj[p]=='object'){
+              newObj[p]  =clone(obj[p]);        //递归
+            }else{
+                newObj[p]=obj[p];
+            }
+
+        }
+        return newObj;
+    }
+    var newClone=clone(obj1);
+    obj1.dad.age=333243;
+    console.log(newClone);      //深拷贝***
+</script>
+</body>
+</html>

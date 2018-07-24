@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+//    var a=5;
+//    function foo() {
+//        var a=6;
+//        console.log(a);
+//    }
+//    foo();
+//    console.log(a);               //6   5
+//var a=5;
+//  function foo() {
+//        console.log(a);
+//      var a=6;
+//    }
+//    foo();
+//    console.log(a);                 //undefined   5
+//var a=5;
+//function foo() {
+//    console.log(a);
+//     a=6;
+//}
+//foo();
+//console.log(a);                 //5   6
+//        var arr=[1,2,3,4];
+//        for(var i=0;i<arr.length;i++){
+//            console.log(arr[i]);
+//        }
+//    var a=5;
+//    function a() {
+//        console.log("1==" +a);
+//    }
+//    a();
+//    console.log("2==" +a);
+//    console.log("3==" +a);      //输出结果为2==5因为function的优先级比var的高
+//   var arr2 = new  Array(1,2,3,4);
+//
+////          console.log(arr2);
+//    var arr=['a','b','c'];
+//    arr.push('d');
+//    console.log(arr);
+//    arr.pop();
+//console.log(arr);
+//console.log(arr.join(':'));     //join是把数组转化成字符串join里面的参数代表用什么分隔
+//    var str='asdfasdfsadf';
+//    console.log(str.split(''));     //split是把字符串转化成数组split里面的参数是分隔
+//    console.log(str.split('').reverse().join(''));
+//    var arr=['a','b'];
+//    console.log(typeof arr);
+//    var obj1={
+//        name:'zhangsan',
+//        age:18,
+//        coding:function () {
+//            console.log('coding');
+//        }
+//    }
+//    console.log(obj1.name);
+//    obj1.coding();
+//    function foo(person) {
+//        console.log(person.age);
+//        console.log(person.height);
+//
+//    }
+//    var person={
+//        name:'lisi',
+//        age:'30',
+//        company:'weichuang',
+//        height:180
+//    };
+//    foo(person);
+var person={
+    name:'lisi',
+    age:'30',
+    company:'weichuang',
+    height:180
+};
+for(var p in person){
+    console.log(p + ":" + person[p]);
+}
+</script>
+</body>
+</html>

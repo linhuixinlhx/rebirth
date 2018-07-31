@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+/*一般会引入rem.js计算出1rem相当于多少px然后使用*/
+        html{
+            width:50px;
+        }
+    #div0{
+        width: 2rem;
+        background: #ff0000;
+
+    }
+        #div1{
+            width:4rem;
+            background: #cccccc;
+
+        }
+        #div2{
+            width:6em;
+            background: #00ff00;/*  em相对于父元素*/
+        }
+
+    </style>
+</head>
+<body>
+<div id="div0">
+    div0000
+    <div id="div1">
+        div11111
+        <div id="div2">
+            div2222
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

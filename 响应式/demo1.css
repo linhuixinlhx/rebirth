@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    width: 960px;
+    height: 100px;
+    background: #cccccc;
+    text-align: center;
+    line-height: 100px;
+    margin:50px auto;
+}
+.img-box{
+    width: 960px;
+    background:url("img/01.jpg") no-repeat;
+    background-size:100%;
+    height: 540px;
+    margin:0 auto;
+}
+
+.text-box{
+    width: 960px;
+    margin:0 auto;
+    overflow: hidden;                          /*父元素塌陷*/
+}
+.left{
+    width: 630px;
+    height: 300px;
+    float: left;
+    background: #ff0000;
+    display: table;
+}
+.left p,.right p{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.right{
+    width: 300px;
+    height: 300px;
+    float: right;
+    background: deepskyblue;
+    display: table;
+}
+
+@media screen and (max-width: 960px){
+    h3{
+        width: 100%;
+    }
+    .img-box{
+        width: 100%;
+        background: url("img/01_s_2x.jpg");
+        background-size:100% ;
+        height: 56vw;
+    }
+
+    /*. 如果不给父元素之前的固定宽度改成100%，就会出现滚动条*/
+    .text-box{
+        width: 100%;
+    }
+    .left{
+        width: 66%;
+    }
+    .right{
+        width: 31%;
+    }
+}
+@media screen and (max-width: 480px){
+    .img-box{
+        width: 100%;
+        background:url("img/01_s.jpg") ;
+        background-size:100% ;                            /*别忘了设置这个*/
+        height:56vw;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}

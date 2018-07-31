@@ -1,0 +1,39 @@
+.header{
+    height:1.01rem;
+    background: #06c1ae;
+    display: -webkit-flex;
+}
+.header-left{
+    width: 1.67rem;
+    height: 1.01rem;
+    line-height: 1.01rem;
+    color:#fff;
+    font-size: .32rem;
+    padding:0 .15rem;
+    box-sizing: border-box;             /*防止他变大*/
+}
+.header-search{
+    -webkit-flex-grow: 1;
+    background: rgba(0,0,0,0.5);
+    border-radius:0.1rem;
+    height:0.64rem;
+    margin-top:0.185rem;
+}
+.header-search input{
+    width: 3rem;
+    height:100%;
+    background: transparent;
+    border:none;
+    outline: none;
+}
+.header-right{
+    width: 0.94rem;
+    color:#fff;
+    text-align: center;
+}
+.icon-mine{
+    display: block;
+    font-size: .4rem;
+    font-weight: 700;
+    text-align: center;
+}

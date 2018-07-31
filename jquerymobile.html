@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <script src="jquery-1.12.4.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="fastclick.js"></script>
+    <style>
+        #div1{
+            width: 500px;
+            height: 400px;
+            background: #ff0000;
+        }
+        #div2{
+            width: 150px;
+            height: 100px;
+            background: #0f0 ;
+            position: absolute;
+            left:10px;
+            top:10px;
+        }
+    </style>
+</head>
+<body>
+        <div id="div1">
+
+        </div>
+        <div id="div2">
+
+        </div>
+        <script>
+//            $('#div1').on('touchstart',function () {
+//                console.log(1111);
+//            });
+//            $('#div1').on('touchend',function () {
+//                console.log(22222);
+//            })
+//            $('#div1').on('touchmove',function () {
+//                console.log(3333);
+//            })
+//            $('#div1').on('touchcancle',function () {
+//                console.log(4444);
+//            })
+
+//            $('#div1').on('click',function () {
+//                console.log(123412);
+//            })
+//            $('#div1').on('swipeleft',function () {
+//                console.log(asdf);
+//            })
+            FastClick.attach(document.body);
+            $('#div2').on('tap',function () {
+                console.log('tap');
+                $('#div2').hide();
+            });
+            $('#div1').on('click',function () {
+                console.log('click');
+            })
+//            输出的括号里要有单引号
+        </script>
+</body>
+</html>

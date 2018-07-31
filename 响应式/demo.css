@@ -58,6 +58,16 @@ h3{
     .img960{
         display: block;
     }
+    /*. 如果不给父元素之前的固定宽度改成100%，就会出现滚动条*/
+    .text-box{
+        width: 100%;
+    }
+    .left{
+        width: 66%;
+    }
+    .right{
+        width: 31%;
+    }
 }
 @media screen and (max-width: 480px){
     .img960,.img1200{
@@ -65,5 +75,11 @@ h3{
     }
 .img480{
     display: block;
+}
+.left{
+    width: 100%;
+}
+.right{
+    width: 100%;
 }
 }
